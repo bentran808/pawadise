@@ -147,6 +147,52 @@ main {
   }
 }
 
+/* SHOP PAGE */
+main {
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+  .bgShop {
+    background-image: url("http://lorempixel.com/1400/400/");
+    height: 400px;
+
+    h2 {
+      color: #444;
+    }
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 0;
+    border: 1px solid #000;
+    background: #e0e0e0;
+
+    .item-left {
+      float: left;
+      text-align: left;
+      margin-left: 20px;
+
+      h2{
+        text-transform: capitalize;
+      }
+
+      h2,h3,p {
+        margin: 5px 0;
+      }
+
+      .rating {
+        color: chocolate;
+      }
+    }
+
+    .item-right {
+      float: right;
+      margin: 15px 20px 0 0;
+    }
+  }
+}
+
 /* FOOTER */
 footer {
   background: #444;

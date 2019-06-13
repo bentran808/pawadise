@@ -2,19 +2,16 @@
 header {
   background: aquamarine;
 }
-
 header::after {
   content: "";
   display: table;
   clear: both;
 }
-
 header .container {
   width: 80%;
   margin: 0 auto;
   padding: 0;
 }
-
 header .container .logo {
   float: left;
   border: 3px solid black;
@@ -22,43 +19,35 @@ header .container .logo {
   padding: 10px;
   text-transform: capitalize;
 }
-
 header .container nav {
   float: right;
 }
-
 header .container nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: left;
 }
-
 header .container nav li {
   display: inline-block;
   margin-left: 30px;
   padding-top: 25px;
 }
-
 header .container nav li:hover a {
   color: #fff;
 }
-
 header .container nav li .menu-sub {
   position: absolute;
   background: #444;
   display: none;
 }
-
 header .container nav li .menu-sub li {
   display: block;
   padding: 10px 0;
 }
-
 header .container nav li:hover .menu-sub {
   display: block;
 }
-
 header .container nav a {
   color: #444;
   text-decoration: none;
@@ -73,94 +62,104 @@ main {
   padding: 0;
   text-align: center;
 }
-
 main .bgImage {
   background-image: url("http://lorempixel.com/1400/400/");
   height: 400px;
   padding: 30px 20px;
 }
-
 main .bgImage p {
   border: 1px solid black;
   border-radius: 20px;
   width: 200px;
 }
-
 main .bgImage p input {
   border: none;
   padding-left: 5px;
   text-transform: capitalize;
 }
-
 main .features {
   margin: 20px 0;
 }
-
 main .features .container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
-  -ms-grid-rows: 50px 2fr 2fr;
-      grid-template-rows: 50px 2fr 2fr;
+  grid-template-rows: 50px 2fr 2fr;
   width: 80%;
   height: 650px;
 }
-
 main .features .container h2 {
   text-transform: capitalize;
   grid-column: span 3;
-  -ms-grid-row: 1;
   grid-row: 1;
 }
-
 main .features .container .feature-item {
   background-image: url("http://lorempixel.com/200/300/");
   background-size: cover;
   color: #fff;
 }
-
 main .features .container .feature-1 {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-start: 2;
 }
-
 main .features .container .feature-2 {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
-
 main .features .container .feature-3 {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-start: 2;
 }
-
 main .features .container .feature-4 {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-grid-row: 3;
-      grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-start: 3;
 }
-
 main .features .container .feature-5 {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  -ms-grid-row: 3;
-      grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+main .features .container .feature-6 {
+  grid-column-start: 3;
+  grid-row-start: 3;
 }
 
-main .features .container .feature-6 {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  -ms-grid-row: 3;
-      grid-row-start: 3;
+/* SHOP PAGE */
+main {
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+main .bgShop {
+  background-image: url("http://lorempixel.com/1400/400/");
+  height: 400px;
+}
+main .bgShop h2 {
+  color: #444;
+}
+main .container {
+  margin: 20px auto;
+  padding: 0;
+  border: 1px solid #000;
+  background: #e0e0e0;
+}
+main .container .item-left {
+  float: left;
+  text-align: left;
+  margin-left: 20px;
+}
+main .container .item-left h2 {
+  text-transform: capitalize;
+}
+main .container .item-left h2, main .container .item-left h3, main .container .item-left p {
+  margin: 5px 0;
+}
+main .container .item-left .rating {
+  color: chocolate;
+}
+main .container .item-right {
+  float: right;
+  margin: 15px 20px 0 0;
 }
 
 /* FOOTER */
@@ -170,34 +169,24 @@ footer {
   height: 300px;
   position: relative;
 }
-
 footer .footer-content {
   height: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 footer .footer-content h1 {
   color: #fff;
 }
-
 footer .footer-content h1 span {
   color: aquamarine;
 }
-
 footer .footer-content .footer-section {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 footer .footer-content .contact span {
   display: block;
   font-size: 30px;
   margin-bottom: 8px;
 }
-
 footer .footer-bottom {
   color: #686868;
   height: 50px;
@@ -208,4 +197,5 @@ footer .footer-bottom {
   left: 0;
   padding-top: 20px;
 }
+
 /*# sourceMappingURL=styles.css.map */
