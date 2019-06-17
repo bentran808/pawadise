@@ -75,7 +75,7 @@ main {
   text-align: center;
 
   .bgImage {
-    background-image: url("http://lorempixel.com/1400/400/");
+    background-image: url("https://loremflickr.com/1400/500/");
     height: 400px;
     padding: 30px 20px;
 
@@ -109,7 +109,7 @@ main {
       }
 
       .feature-item {
-        background-image: url("http://lorempixel.com/200/300/");
+        background-image: url("https://loremflickr.com/200/300/");
         background-size: cover;
         color: #fff;
       }
@@ -154,41 +154,252 @@ main {
   padding: 0;
   text-align: center;
   .bgShop {
-    background-image: url("http://lorempixel.com/1400/400/");
+    background-image: url("https://loremflickr.com/1400/500/");
     height: 400px;
-
-    h2 {
-      color: #444;
-    }
   }
 
   .container {
     margin: 20px auto;
     padding: 0;
-    border: 1px solid #000;
-    background: #e0e0e0;
 
-    .item-left {
+    .shop-item {
+      border: 1px solid #000;
+      background: #e0e0e0;
+
+      .item-left {
+        float: left;
+        text-align: left;
+        margin-left: 20px;
+
+        h2 {
+          text-transform: capitalize;
+        }
+
+        h2,
+        h3,
+        p {
+          margin: 5px 0;
+        }
+
+        .rating {
+          color: chocolate;
+        }
+      }
+
+      .item-right {
+        float: right;
+        margin: 15px 20px 0 0;
+      }
+    }
+  }
+}
+
+/* NEWS PAGE */
+main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  .bgNews {
+    background-image: url("https://loremflickr.com/1400/500/");
+    height: 400px;
+  }
+
+  button {
+    border: none;
+    background: #fff;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+
+    .activity {
+      color: #000;
       float: left;
       text-align: left;
-      margin-left: 20px;
-
-      h2{
-        text-transform: capitalize;
-      }
-
-      h2,h3,p {
-        margin: 5px 0;
-      }
-
-      .rating {
-        color: chocolate;
+      border: 1px solid #000;
+      width: 100%;
+      font-size: 18px;
+      padding: 10px 0;
+      a {
+        display: inline-block;
+        margin-left: 20px;
+        color: #000;
+        list-style: none;
       }
     }
 
-    .item-right {
+    .txt-area {
+      width: 100%;
+      height: 200px;
+      border: 1px solid #000;
+      position: relative;
+
+      a {
+        color: #000;
+        font-size: 28px;
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+      }
+    }
+
+    .activity-1 {
+      border: 1px solid #000;
+      position: relative;
+
+      .column {
+        float: left;
+        text-align: left;
+        width: 50%;
+        padding: 10px 100px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .post {
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+      }
+    }
+  }
+
+  .news-content {
+    border: 1px solid #000;
+    margin: 20px auto;
+    padding: 0;
+    width: 50%;
+
+    p {
+      text-align: left;
+      margin: 0 30px;
+    }
+
+    h5 {
+      display: inline-block;
+      margin: 10px 100px;
+    }
+
+    .news-header {
+      text-align: left;
+      width: 100%;
+      margin: 0 10px;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #000;
+        background: #000;
+      }
+
+      h3 {
+        display: inline-block;
+      }
+    }
+    .news-btn {
+      border: 1px solid #000;
+      padding: 10px 0;
+      button {
+        margin: 0 100px;
+        font-size: 24px;
+      }
+    }
+
+    .news-cmt {
+      text-align: left;
+      margin: 10px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #000;
+        margin-right: 10px;
+      }
+      h4 {
+        display: inline-block;
+      }
+      p {
+        display: inline-block;
+      }
+
+      &-btn {
+        margin: 0 40px;
+        font-size: 14px;
+      }
+
+      .news-rep {
+        margin: 10px 0;
+        img {
+          width: 20px;
+          height: 20px;
+          margin: {
+            left: 20px;
+            right: 10px;
+          }
+        }
+
+        .input-container {
+          border: 1px solid #000;
+          width: 80%;
+          display: inline-block;
+          font-size: 14px;
+          padding: 5px 0;
+          input {
+            border: none;
+          }
+          .icon {
+            float: right;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .cmt-container {
+        border: 1px solid #000;
+        width: 90%;
+        display: inline-block;
+        font-size: 14px;
+        padding: 5px 0;
+        input {
+          border: none;
+        }
+        .icon {
+          float: right;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* CONTACT PAGE */
+main {
+  .bgContact {
+    background-image: url("https://loremflickr.com/1400/500/");
+    height: 400px;
+  }
+  .container {
+    margin: 20px auto;
+    .info {
+      float: left;
+      width: 50%;
+      text-align: left;
+    }
+
+    .form-contact {
       float: right;
-      margin: 15px 20px 0 0;
+      width: 50%;
+      text-align: left;
+      input{
+        width: 100%;
+      }
     }
   }
 }

@@ -63,7 +63,7 @@ main {
   text-align: center;
 }
 main .bgImage {
-  background-image: url("http://lorempixel.com/1400/400/");
+  background-image: url("https://loremflickr.com/1400/500/");
   height: 400px;
   padding: 30px 20px;
 }
@@ -94,7 +94,7 @@ main .features .container h2 {
   grid-row: 1;
 }
 main .features .container .feature-item {
-  background-image: url("http://lorempixel.com/200/300/");
+  background-image: url("https://loremflickr.com/200/300/");
   background-size: cover;
   color: #fff;
 }
@@ -131,35 +131,220 @@ main {
   text-align: center;
 }
 main .bgShop {
-  background-image: url("http://lorempixel.com/1400/400/");
+  background-image: url("https://loremflickr.com/1400/500/");
   height: 400px;
-}
-main .bgShop h2 {
-  color: #444;
 }
 main .container {
   margin: 20px auto;
   padding: 0;
+}
+main .container .shop-item {
   border: 1px solid #000;
   background: #e0e0e0;
 }
-main .container .item-left {
+main .container .shop-item .item-left {
   float: left;
   text-align: left;
   margin-left: 20px;
 }
-main .container .item-left h2 {
+main .container .shop-item .item-left h2 {
   text-transform: capitalize;
 }
-main .container .item-left h2, main .container .item-left h3, main .container .item-left p {
+main .container .shop-item .item-left h2,
+main .container .shop-item .item-left h3,
+main .container .shop-item .item-left p {
   margin: 5px 0;
 }
-main .container .item-left .rating {
+main .container .shop-item .item-left .rating {
   color: chocolate;
 }
-main .container .item-right {
+main .container .shop-item .item-right {
   float: right;
   margin: 15px 20px 0 0;
+}
+
+/* NEWS PAGE */
+main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+main .bgNews {
+  background-image: url("https://loremflickr.com/1400/500/");
+  height: 400px;
+}
+main button {
+  border: none;
+  background: #fff;
+}
+main .container {
+  margin: 0 auto;
+  padding: 0;
+  width: 70%;
+}
+main .container .activity {
+  color: #000;
+  float: left;
+  text-align: left;
+  border: 1px solid #000;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0;
+}
+main .container .activity a {
+  display: inline-block;
+  margin-left: 20px;
+  color: #000;
+  list-style: none;
+}
+main .container .txt-area {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #000;
+  position: relative;
+}
+main .container .txt-area a {
+  color: #000;
+  font-size: 28px;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+main .container .activity-1 {
+  border: 1px solid #000;
+  position: relative;
+}
+main .container .activity-1 .column {
+  float: left;
+  text-align: left;
+  width: 50%;
+  padding: 10px 100px;
+}
+main .container .activity-1 .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+main .container .activity-1 .post {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+main .news-content {
+  border: 1px solid #000;
+  margin: 20px auto;
+  padding: 0;
+  width: 50%;
+}
+main .news-content p {
+  text-align: left;
+  margin: 0 30px;
+}
+main .news-content h5 {
+  display: inline-block;
+  margin: 10px 100px;
+}
+main .news-content .news-header {
+  text-align: left;
+  width: 100%;
+  margin: 0 10px;
+}
+main .news-content .news-header img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  background: #000;
+}
+main .news-content .news-header h3 {
+  display: inline-block;
+}
+main .news-content .news-btn {
+  border: 1px solid #000;
+  padding: 10px 0;
+}
+main .news-content .news-btn button {
+  margin: 0 100px;
+  font-size: 24px;
+}
+main .news-content .news-cmt {
+  text-align: left;
+  margin: 10px;
+}
+main .news-content .news-cmt img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  margin-right: 10px;
+}
+main .news-content .news-cmt h4 {
+  display: inline-block;
+}
+main .news-content .news-cmt p {
+  display: inline-block;
+}
+main .news-content .news-cmt-btn {
+  margin: 0 40px;
+  font-size: 14px;
+}
+main .news-content .news-cmt .news-rep {
+  margin: 10px 0;
+}
+main .news-content .news-cmt .news-rep img {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+main .news-content .news-cmt .news-rep .input-container {
+  border: 1px solid #000;
+  width: 80%;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 0;
+}
+main .news-content .news-cmt .news-rep .input-container input {
+  border: none;
+}
+main .news-content .news-cmt .news-rep .input-container .icon {
+  float: right;
+  margin-right: 5px;
+}
+main .news-content .news-cmt .cmt-container {
+  border: 1px solid #000;
+  width: 90%;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 0;
+}
+main .news-content .news-cmt .cmt-container input {
+  border: none;
+}
+main .news-content .news-cmt .cmt-container .icon {
+  float: right;
+  margin-right: 5px;
+}
+
+/* CONTACT PAGE */
+main .bgContact {
+  background-image: url("https://loremflickr.com/1400/500/");
+  height: 400px;
+}
+main .container {
+  margin: 20px auto;
+}
+main .container .info {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+main .container .form-contact {
+  float: right;
+  width: 50%;
+  text-align: left;
+}
+main .container .form-contact input {
+  width: 100%;
 }
 
 /* FOOTER */

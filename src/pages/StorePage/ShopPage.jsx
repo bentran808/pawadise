@@ -19,7 +19,7 @@ class ShopPage extends Component {
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quidem.</p>
                         </div>
                         <div className="item-right">
-                            <img src="http://lorempixel.com/100/100/" alt="shop-img" />
+                            <img src="http://loremflickr.com/100/100/shop" alt="shop-img" />
                         </div>
                     </div>
                 </div>
