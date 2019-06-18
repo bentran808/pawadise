@@ -26,22 +26,22 @@ class Nav extends Component {
                         </ul>
                     </nav>
                 </div>
-                <div class="modal fade" id="modal-id">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                <h4 class="modal-title">Login Form</h4>
+                <div className="modal fade" id="modal-id">
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <button type="button" className="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 className="modal-title">Login Form</h4>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                                 
-                                <input type="email" name="email" id="inputemail" class="form-control" placeholder="info@gmail.com" required="required" title=""/>
-                                <input type="password" name="password" id="inputpwd" class="form-control" value="" required="required" title=""/>
+                                <input type="email" name="email" id="inputEmail" className="form-control" placeholder="info@gmail.com" value="info@gmail.com" required="required"/>
+                                <input type="password" name="password" id="inputPwd" className="form-control" value="123123" required="required"/>
                                 
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" className="btn btn-primary">Save changes</button>
                             </div>
                         </div>
                     </div>

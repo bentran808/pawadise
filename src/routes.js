@@ -8,6 +8,9 @@ import NewsPage from './pages/NewsPage/NewsPage';
 import EventsPage from './pages/EventsPage/EventsPage';
 import GalleryPage from './pages/GalleryPage/GalleryPage';
 import ContactPage from './pages/ContactPage/ContactPage';
+import ShopDetailsPage from './pages/DetailsPage/ShopDetailsPage';
+import CafeDetailsPage from './pages/DetailsPage/CafeDetailsPage';
+import MedicalDetailsPage from './pages/DetailsPage/MedicalDetailsPage';
 
 const routes = [
     {
@@ -17,18 +20,18 @@ const routes = [
     },
     {
         path: '/shop',
-        exact: false,
-        main: () => <ShopPage />
+        exact: true,
+        main: ({match}) => <ShopPage match={match}/>
     },
     {
         path: '/cafe',
-        exact: false,
-        main: () => <CafePage />
+        exact: true,
+        main: ({match}) => <CafePage match={match}/>
     },
     {
         path: '/medical',
-        exact: false,
-        main: () => <MedicalPage />
+        exact: true,
+        main: ({match}) => <MedicalPage match={match}/>
     },
     {
         path: '/news',
@@ -49,6 +52,21 @@ const routes = [
         path: '/contact',
         exact: false,
         main: () => <ContactPage />
+    },
+    {
+        path: '/shop/:slug',
+        exact: false,
+        main: () => <ShopDetailsPage />
+    },
+    {
+        path: '/cafe/:slug',
+        exact: false,
+        main: () => <CafeDetailsPage />
+    },
+    {
+        path: '/medical/:slug',
+        exact: false,
+        main: () => <MedicalDetailsPage />
     },
     {
         path: '',

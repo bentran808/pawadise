@@ -126,12 +126,13 @@ main .features .container .feature-6 {
 /* SHOP PAGE */
 main {
   width: 100%;
+  height: auto;
   margin: 20px 0;
   padding: 0;
   text-align: center;
 }
 main .bgShop {
-  background-image: url("https://loremflickr.com/1400/500/");
+  background-image: url("https://loremflickr.com/1400/500/shop");
   height: 400px;
 }
 main .container {
@@ -139,28 +140,37 @@ main .container {
   padding: 0;
 }
 main .container .shop-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 175px;
   border: 1px solid #000;
-  background: #e0e0e0;
 }
-main .container .shop-item .item-left {
+main .container .item-left {
   float: left;
   text-align: left;
   margin-left: 20px;
+  width: 80%;
 }
-main .container .shop-item .item-left h2 {
+main .container .item-left h2 {
   text-transform: capitalize;
 }
-main .container .shop-item .item-left h2,
-main .container .shop-item .item-left h3,
-main .container .shop-item .item-left p {
+main .container .item-left h2,
+main .container .item-left h3,
+main .container .item-left p {
   margin: 5px 0;
 }
-main .container .shop-item .item-left .rating {
+main .container .item-left .rating {
   color: chocolate;
 }
-main .container .shop-item .item-right {
+main .container .item-right {
   float: right;
   margin: 15px 20px 0 0;
+}
+
+/* CAFE PAGE */
+.bgCafe {
+  background-image: url("https://loremflickr.com/1400/500/cafe");
+  height: 400px;
 }
 
 /* NEWS PAGE */
@@ -345,6 +355,110 @@ main .container .form-contact {
 }
 main .container .form-contact input {
   width: 100%;
+}
+
+/* SHOP DETAILS */
+.bgDetails {
+  position: relative;
+  height: 400px;
+}
+.bgDetails .card-shop {
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  background-color: black;
+  color: white;
+  padding: 30px 50px;
+}
+
+.container {
+  margin: 0 auto;
+}
+.container .intro-shop {
+  float: left;
+  width: 50%;
+  height: 300px;
+}
+.container .intro-shop h1 {
+  text-align: center;
+  width: 100%;
+}
+@keyframes slideshow {
+  10% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  30% {
+    left: -100%;
+  }
+  40% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  60% {
+    left: -200%;
+  }
+  70% {
+    left: -300%;
+  }
+  80% {
+    left: -300%;
+  }
+  90% {
+    left: -400%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+.container .intro-shop #slider {
+  overflow: hidden;
+  width: 70%;
+  margin: 5px auto;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+.container .intro-shop #slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  animation: 20s slideshow infinite;
+}
+.container .intro-shop #slider figure img {
+  width: 20%;
+  float: left;
+}
+@media screen and (max-width: 767px) {
+  .container .intro-shop #slider {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.container .intro-content {
+  float: left;
+  width: 50%;
+  height: 300px;
+  text-align: justify;
+  text-indent: 30px;
+  padding: 10px;
+}
+.container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  padding: 10px;
+}
+.container .grid-container .grid-item {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
 
 /* FOOTER */

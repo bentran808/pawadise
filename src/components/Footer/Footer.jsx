@@ -10,10 +10,10 @@ class Footer extends Component {
                     </div>
                     <div className="footer-section"></div>
                     <div className="footer-section contact">
-                        <span><i class="fa fa-map-marked-alt"></i> &nbsp; 70 Phan Thanh</span>
-                        <span><i class="fa fa-phone"></i> &nbsp; 123-456-789</span>
-                        <span><i class="fa fa-envelope"></i> &nbsp; info@gmail.com</span>
-                        <span><i class="fa fa-facebook-square"></i> &nbsp; Facebook.com </span>
+                        <span><i className="fa fa-map-marked-alt"></i> &nbsp; 70 Phan Thanh</span>
+                        <span><i className="fa fa-phone"></i> &nbsp; 123-456-789</span>
+                        <span><i className="fa fa-envelope"></i> &nbsp; info@gmail.com</span>
+                        <span><i className="fa fa-facebook-square"></i> &nbsp; facebook.com </span>
                     </div>
                 </div>
                 <div className="footer-bottom">
