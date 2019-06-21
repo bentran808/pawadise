@@ -41,7 +41,7 @@ class NewsPage extends Component {
 
                 <section className="news-content">
                     <div className="news-header">
-                        <img src="https://loremflickr.com/50/50/user" alt="avt-user" />
+                        <img src="https://lorempixel.com/50/50/" alt="avt-user" />
                         <h3>Username</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quibusdam id omnis laudantium. Nisi perferendis deserunt esse eius obcaecati ipsa mollitia autem voluptatibus similique architecto? Autem dolorum dignissimos voluptatem ut.</p>
@@ -52,7 +52,7 @@ class NewsPage extends Component {
                         <button><i class="far fa-comments"></i>Bình luận</button>
                     </div>
                     <div className="news-cmt">
-                        <img src="https://loremflickr.com/50/50/user" alt="avt-user" />
+                        <img src="https://lorempixel.com/50/50/" alt="avt-user" />
                         <h4>Username</h4>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <div className="news-cmt-btn">
@@ -60,14 +60,14 @@ class NewsPage extends Component {
                             <button>Trả lời</button>
                         </div>
                         <div className="news-rep">
-                            <img src="https://loremflickr.com/50/50/user" alt="avt-user" />
+                            <img src="https://lorempixel.com/50/50/" alt="avt-user" />
                             <div className="input-container">
                                 <input type="text" name="news-rep" />
                                 <i class="far fa-smile icon"></i>
                                 <i class="fas fa-camera icon"></i>
                             </div>
                         </div>
-                        <img src="https://loremflickr.com/50/50/user" alt="avt-user" />
+                        <img src="https://lorempixel.com/50/50/" alt="avt-user" />
                         <div className="cmt-container">
                             <input type="text" name="news-cmt" />
                             <i class="far fa-smile icon"></i>

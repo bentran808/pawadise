@@ -35,29 +35,29 @@ class MedicalPage extends Component {
         var services = [
           {
             id: 1,
-            name: "K-Mart",
-            address: "70 Phan Thanh",
+            name: "PHÒNG KHÁM THÚ Y ĐÀ NẴNG - DA NANG VETERINARY CLINIC",
+            address: "54 Nguyễn Phẩm",
             description:
               "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, corporis."
           },
           {
             id: 2,
-            name: "Pet Mart",
-            address: "70 Phan Thanh",
+            name: "Đại Lý Thuốc Thú Y - Thủy Sản Thành Yến",
+            address: "44 Nguyễn Viết Xuân",
             description:
               "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, corporis."
           },
           {
             id: 3,
-            name: "Paw Mart",
-            address: "70 Phan Thanh",
+            name: "Chi cục Thú y Tp.Đà Nẵng",
+            address: "110 Triệu Nữ Vương",
             description:
               "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, corporis."
           },
           {
             id: 4,
-            name: "Ben service",
-            address: "70 Phan Thanh",
+            name: "Bác Sĩ Thú Y Tận Nhà Tại Đà Nẵng",
+            address: "245 Trường Chinh",
             description:
               "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, corporis."
           }
@@ -86,7 +86,7 @@ class MedicalPage extends Component {
                   <p>{service.description}</p>
                 </div>
                 <div className="item-right">
-                  <img src="http://loremflickr.com/100/100/pet" alt="service-img" />
+                  <img src="http://lorempixel.com/100/100/" alt="service-img" />
                 </div>
               </div>
             </Link>

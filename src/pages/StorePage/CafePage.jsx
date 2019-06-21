@@ -98,7 +98,7 @@ class CafePage extends Component {
               <p>{cafe.description}</p>
             </div>
             <div className="item-right">
-              <img src="http://loremflickr.com/100/100/cafe" alt="cafe-img" />
+              <img src="http://lorempixel.com/100/100/" alt="cafe-img" />
             </div>
           </div>
         </Link>
