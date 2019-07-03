@@ -11,6 +11,8 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import ShopDetailsPage from './pages/DetailsPage/ShopDetailsPage';
 import CafeDetailsPage from './pages/DetailsPage/CafeDetailsPage';
 import MedicalDetailsPage from './pages/DetailsPage/MedicalDetailsPage';
+import Image from './pages/GalleryPage/Image';
+import ProfilePage from './pages/ProfilePage/ProfilePage';
 
 const routes = [
     {
@@ -67,6 +69,16 @@ const routes = [
         path: '/medical/:slug',
         exact: false,
         main: () => <MedicalDetailsPage />
+    },
+    {
+        path: '/img',
+        exact: false,
+        main: () => <Image />
+    },
+    {
+        path: '/profile',
+        exact: false,
+        main: () => <ProfilePage />
     },
     {
         path: '',

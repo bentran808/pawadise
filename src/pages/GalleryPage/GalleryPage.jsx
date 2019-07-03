@@ -13,8 +13,8 @@ class GalleryPage extends Component {
             <button>Mèo</button>
             <button>Khác</button>
         </div>
-        <div className="row">
-          <div className="column">
+        <div className="row-gallery">
+          <div className="column-gallery">
             <img src="http://lorempixel.com/800/500/" />
             <img src="http://lorempixel.com/500/800/" />
             <img src="http://lorempixel.com/1000/500/" />
@@ -23,7 +23,7 @@ class GalleryPage extends Component {
             <img src="http://lorempixel.com/1500/380/" />
             <img src="http://lorempixel.com/400/300/" />
           </div>
-          <div className="column">
+          <div className="column-gallery">
             <img src="http://lorempixel.com/800/800/" />
             <img src="http://lorempixel.com/1000/500/" />
             <img src="http://lorempixel.com/800/500/" />
@@ -31,7 +31,7 @@ class GalleryPage extends Component {
             <img src="http://lorempixel.com/500/800/" />
             <img src="http://lorempixel.com/800/800/" />
           </div>
-          <div className="column">
+          <div className="column-gallery">
           <img src="http://lorempixel.com/800/500/" />
             <img src="http://lorempixel.com/500/800/" />
             <img src="http://lorempixel.com/1000/500/" />
@@ -40,7 +40,7 @@ class GalleryPage extends Component {
             <img src="http://lorempixel.com/1500/380/" />
             <img src="http://lorempixel.com/400/300/" />
           </div>
-          <div className="column">
+          <div className="column-gallery">
           <img src="http://lorempixel.com/800/800/" />
             <img src="http://lorempixel.com/1000/500/" />
             <img src="http://lorempixel.com/800/500/" />

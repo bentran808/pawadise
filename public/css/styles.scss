@@ -17,7 +17,6 @@ header {
       border: 3px solid black;
       margin: 10px 0;
       padding: 10px;
-      text-transform: capitalize;
     }
 
     nav {
@@ -34,6 +33,12 @@ header {
         display: inline-block;
         margin-left: 30px;
         padding-top: 25px;
+
+        button {
+          border: none;
+          background: none;
+          text-transform: uppercase;
+        }
 
         &:hover a {
           color: #fff;
@@ -63,6 +68,92 @@ header {
         }
         font-size: 14px;
       }
+    }
+  }
+}
+
+/* LOGIN FORM */
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &_inner {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+    text-align: center;
+
+    h3 {
+      text-transform: capitalize;
+      margin: 20px auto;
+    }
+
+    .input-container {
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .icon {
+      padding: 10px;
+      background: dodgerblue;
+      color: white;
+      min-width: 50px;
+      text-align: center;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      outline: none;
+    }
+
+    .input-field:focus {
+      border: 2px solid dodgerblue;
+    }
+
+    .btn {
+      background-color: dodgerblue;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .btn:hover {
+      opacity: 1;
+    }
+
+    label {
+      text-align: left;
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .close {
+      color: #000;
+      border: none;
+      line-height: 25px;
+      position: absolute;
+      right: 0px;
+      text-align: center;
+      top: 0px;
+      width: 24px;
+      font-weight: bold;
+      border-radius: 12px;
     }
   }
 }
@@ -641,8 +732,8 @@ main {
 .btn-filter {
   padding: 10px 0;
   margin-top: 20px;
-  
-  button{
+
+  button {
     border: 1px solid #000;
     border-radius: 20px;
     font-size: 20px;
@@ -651,7 +742,7 @@ main {
   }
 }
 
-.row {
+.row-gallery {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -660,7 +751,7 @@ main {
   width: 80%;
   margin: 10px auto;
 
-  .column {
+  .column-gallery {
     -ms-flex: 25%;
     flex: 25%;
     max-width: 25%;
@@ -673,7 +764,7 @@ main {
     }
 
     @media screen and (max-width: 800px) {
-      .column {
+      .column-gallery {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
@@ -681,10 +772,197 @@ main {
     }
 
     @media screen and (max-width: 600px) {
-      .column {
+      .column-gallery {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
+      }
+    }
+  }
+}
+
+/* PROFILE */
+
+.profile-container {
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 500px;
+  height: 900px;
+  background: #e6ecf0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: box-shadow 0.2s linear;
+  text-align: center;
+
+  .top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    align-self: flex-start;
+    height: auto;
+    z-index: 1;
+  }
+
+  .profile-pic {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #b2dfdb;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4), 0 5px 15px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .profile {
+    position: absolute;
+    top: 23.8%;
+    width: 500px;
+    height: 180px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+
+    &-info {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      right: 5%;
+      top: 5%;
+      width: 50%;
+      height: 40%;
+
+      .name {
+        color: #26a69a;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .name-tag {
+        color: grey;
+        font-size: 16px;
+      }
+    }
+
+    &-popularity {
+      position: absolute;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+
+      .field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .pop-tag {
+          color: grey;
+          font-size: 16px;
+        }
+
+        .pop-num {
+          color: #80cbc4;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .images {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    top: 45%;
+    left: 2%;
+    width: 96%;
+    height: 200px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease-in-out;
+    z-index: 2;
+
+    .img {
+      width: 100px;
+      height: 70px;
+      background: grey;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4),
+          0 5px 15px 5px rgba(0, 0, 0, 0.6);
+        z-index: 2;
+      }
+    }
+  }
+
+  .posts {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    top: 68.5%;
+    left: 2%;
+    width: 96%;
+    height: 60%;
+
+    .post {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      width: 100%;
+      height: 6%;
+      background: white;
+      margin-bottom: 13px;
+      padding: 10px 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      transition: all 0.2s ease-in-out;
+      z-index: 1;
+
+      .post-title {
+        color: #004d40;
+        font-size: 22px;
+        text-align: left;
+
+        input {
+          border: none;
+          background: none;
+          cursor: pointer;
+          width: 65%;
+          float: right;
+        }
+      }
+
+      .post-comment {
+        text-align: justify;
+        font-size: 15px;
+        color: #00695c;
+      }
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4),
+          0 5px 15px 5px rgba(0, 0, 0, 0.6);
+        transform: scale(1.2);
+        z-index: 2;
       }
     }
   }
